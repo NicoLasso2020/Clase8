@@ -1,0 +1,49 @@
+/* Estilos para la sección de reseñas */
+#reseñas {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+  padding: 20px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #reseñas {
+      grid-template-columns: 1fr;
+  }
+
+  form {
+      padding: 10px;
+  }
+
+  input, textarea {
+      padding: 8px;
+  }
+}
